@@ -9,7 +9,7 @@ class Menu:
     def __init__(self, window):
         self.window = window
         # carregar a imagem selecionada
-        self.surf = pygame.image.load('./asset/MenuBg.png')  # "surf" é o nome criado para a variável
+        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()  # "surf" é o nome criado para a variável / convert_alpha otimiza os píxeis transparentes da imagem
         self.rect = self.surf.get_rect(left=0, top=0)  # get_rect() serve para dizer onde começa o retângulo criado
         # "left=0" e "top=0" já é a posição padrão de onde começa o retângulo
 
