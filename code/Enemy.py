@@ -8,6 +8,3 @@ class Enemy(Entity):
 
     def move(self):
         self.rect.centerx -= ENTITY_SPEED[self.name]  # igual o movimento do background
-
-        if self.rect.right <= 0:
-            self.rect.left = WIN_WIDTH
