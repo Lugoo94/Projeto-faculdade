@@ -1,3 +1,5 @@
+import sys
+
 import pygame
 
 from code.Level import Level
@@ -37,4 +39,5 @@ class Game:
                 quit()  # fecha o pygame
 
             else:
-                pass
+                pygame.quit()
+                sys.exit()

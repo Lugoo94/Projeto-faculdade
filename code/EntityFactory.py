@@ -9,7 +9,7 @@ from code.Player import Player
 class EntityFactory:
 
     @staticmethod
-    def get_entity(entity_name: str, position=(0, 0)):  # "fabricação" das entidades
+    def get_entity(entity_name: str):  # "fabricação" das entidades
         match entity_name:
             case 'Level1Bg':
                 list_bg = []
