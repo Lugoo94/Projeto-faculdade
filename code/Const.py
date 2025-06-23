@@ -10,6 +10,7 @@ C_CYAN = (0, 128, 128)
 
 # Constantes que começam com "E"
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 ENTITY_DAMAGE = {
     'Level1Bg0': 0,
@@ -131,6 +132,11 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
 
 # Constantes que começam com "S"
 SPAWN_TIME = 4000  # 4 segundos
+
+# Constantes que começam com "T"
+TIMEOUT_LEVEL = 20000  # 20 segundos
+
+TIMEOUT_STEP = 100  # 100 milissegundos
 
 # Constantes que começam com "W"
 WIN_WIDTH = 576
